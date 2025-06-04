@@ -3,7 +3,7 @@ We propose a model to enhance traffic flow forecasting by integrating multiscale
 
 ![Alt Text](image.jpg)
 ## Usage
-1.Install the environment based on requirements.txt
-2.Download PEMS03.npz, PEMS04.npz, PEMS07.npz, PEMS08.npz and put them into ./data
-3.Download llama-7b, gpt-2, bert and put them into ./LLM
+1.Install the environment based on requirements.txt  
+2.Download PEMS03.npz, PEMS04.npz, PEMS07.npz, PEMS08.npz and put them into ./data  
+3.Download llama-7b, gpt-2, bert and put them into ./LLM  
 4.run run.ipynb
