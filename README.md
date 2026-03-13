@@ -35,10 +35,11 @@ Specifically:
 - The time series is divided into multiple temporal blocks, and 1D convolution is used to capture local features between adjacent blocks.  
 - A multi-head cross-attention mechanism aligns the temporal feature blocks with the semantic space of the LLM, i.e., the pretrained token embeddings.
 ### 5️⃣ Cross-Attention Semantic Injection
-A cross-attention mechanism is then used to inject semantic-level information into the forecasting model.  
-This allows the framework to:  
-- Activate the semantic reasoning capability of LLMs  
-- Capture complex latent structures in feature sequences
+A cross-attention mechanism is used to inject semantic-level information into the forecasting model.  
+
+- In the Cross-Attention module, Q is derived from temporal feature blocks, while K/V are obtained from text prototypes.
+- The cross-attention output is fed into a frozen LLM for deeper semantic modeling.
+- The final hidden states are extracted and transformed through flattening and linear projection to produce the prediction sequence.
 ## Usage
 1.Install the environment based on requirements.txt  
 2.Download PEMS03.npz, PEMS04.npz, PEMS07.npz, PEMS08.npz and put them into ./data  
