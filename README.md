@@ -35,9 +35,9 @@ Specifically:
 - The time series is divided into multiple temporal blocks, and 1D convolution is used to capture local features between adjacent blocks.  
 - A multi-head cross-attention mechanism aligns the temporal feature blocks with the semantic space of the LLM, i.e., the pretrained token embeddings.
 ### 5️⃣ Cross-Attention Semantic Injection
-A cross-attention mechanism is used to inject semantic-level information into the forecasting model.  
+A cross-attention mechanism is used to inject semantic-level information into the temporal feature blocks.  
 
-- In the Cross-Attention module, Q is derived from temporal feature blocks, while K/V are obtained from text prototypes.
+- In the Cross-Attention module, Q is derived from temporal feature blocks, while K/V are obtained from pretrained LLM token vocabulary.
 - The cross-attention output is fed into a frozen LLM for deeper semantic modeling.
 - The final hidden states are extracted and transformed through flattening and linear projection to produce the prediction sequence.
 ## Usage
