@@ -18,7 +18,15 @@ For each sub-sequence:
 
 These components are then aggregated across scales using weighted fusion, allowing the model to jointly capture:  
 - Short-term dynamics  
-- Long-term temporal dependencies  
+- Long-term temporal dependencies
+### 3️⃣ Multiscale Representation Integration
+To further integrate information across scales:  
+- A Multi-Layer Perceptron (MLP) is applied  
+- It combines representations from different temporal resolutions  
+
+This improves:  
+- Representation capacity  
+- Predictive robustness  
 ## Usage
 1.Install the environment based on requirements.txt  
 2.Download PEMS03.npz, PEMS04.npz, PEMS07.npz, PEMS08.npz and put them into ./data  
