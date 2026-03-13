@@ -33,8 +33,7 @@ To enhance the model's understanding of latent semantics in time series:
 
 Specifically:  
 - The input data is reprogrammed into feature sequence blocks  
-- These blocks are mapped into the LLM token embedding space  
-- The embeddings form semantic prototypes
+- These blocks are mapped into the LLM pretrained tokenizer vocabulary    
 ### 5️⃣ Cross-Attention Semantic Injection
 A cross-attention mechanism is then used to inject semantic-level information into the forecasting model.  
 This allows the framework to:  
