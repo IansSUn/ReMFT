@@ -7,24 +7,24 @@ The overall architecture of the framework is illustrated below.
 ![Alt Text](framework.png)
 ## Key components
 ### 1️⃣ Multiscale Time-Series Decomposition
-The framework first performs multiscale decomposition on the original time series.  
+The framework first performs multiscale decomposition on the original time series.
 - The raw sequence is partitioned into multiple sub-sequences at different temporal resolutions.  
 - This enables the model to capture temporal patterns across multiple time granularities.  
 ### 2️⃣ Multiscale Trend-Seasonality Mixing (MTSM)
 We introduce the Multiscale Trend-Seasonality Mixing (MTSM) module to extract temporal components.  
-For each sub-sequence:  
+For each sub-sequence:
 - Trend component → captures long-term evolution  
 - Seasonal component → captures periodic fluctuations
 
-These components are then aggregated across scales using weighted fusion, allowing the model to jointly capture:  
+These components are then aggregated across scales using weighted fusion, allowing the model to jointly capture:
 - Short-term dynamics  
 - Long-term temporal dependencies
 ### 3️⃣ Multiscale Representation Integration
-To further integrate information across scales:  
+To further integrate information across scales:
 - A Multi-Layer Perceptron (MLP) is applied  
 - It combines representations from different temporal resolutions  
 
-This improves:  
+This improves:
 - Representation capacity  
 - Predictive robustness  
 ## Usage
