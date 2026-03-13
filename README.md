@@ -2,6 +2,7 @@
 ## Overview
 ReMFT is a framework designed to enhance traffic flow forecasting by integrating multiscale temporal modeling with LLM-based semantic representation learning.
 The overall architecture of the framework is illustrated below.
+
 ![Alt Text](framework.png)
 ## Key components
 ### 1️⃣ Multiscale Time-Series Decomposition
