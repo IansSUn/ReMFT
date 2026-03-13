@@ -26,11 +26,18 @@ To further integrate information across scales:
 
 This improves:
 - Representation capacity  
-- Predictive robustness  
+- Predictive robustness
+### 4️⃣ LLM-based Semantic Representation
+To enhance the model's understanding of latent semantics in time series:  
+- We incorporate the embedding space of a pre-trained Large Language Model (LLM).  
+
+Specifically:  
+- The input data is reprogrammed into feature sequence blocks  
+- These blocks are mapped into the LLM token embedding space  
+- The embeddings form semantic prototypes  
 ## Usage
 1.Install the environment based on requirements.txt  
 2.Download PEMS03.npz, PEMS04.npz, PEMS07.npz, PEMS08.npz and put them into ./data  
 3.Download llama-7b, gpt-2, bert and put them into ./LLM  
 4.run run.ipynb
 
-1️⃣ Multiscale Time-Series Decomposition
