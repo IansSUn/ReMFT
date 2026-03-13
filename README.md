@@ -15,7 +15,7 @@ We introduce the Multiscale Trend-Seasonality Mixing (MTSM) module to extract te
 For each sub-sequence:  
 - Trend component → captures long-term evolution  
 - Seasonal component → captures periodic fluctuations
-- 
+
 These components are then aggregated across scales using weighted fusion, allowing the model to jointly capture:  
 - Short-term dynamics  
 - Long-term temporal dependencies  
