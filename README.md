@@ -7,3 +7,5 @@ We propose a novel framework to enhance traffic flow forecasting, as illustrated
 2.Download PEMS03.npz, PEMS04.npz, PEMS07.npz, PEMS08.npz and put them into ./data  
 3.Download llama-7b, gpt-2, bert and put them into ./LLM  
 4.run run.ipynb
+
+1️⃣ Multiscale Time-Series Decomposition
